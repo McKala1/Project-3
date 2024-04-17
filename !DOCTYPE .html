@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Showcase</title>
+    
+    <!-- Import a custom font for the title -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+
+    <!-- CSS -->
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Gradient background with light blue face colors */
+            background: linear-gradient(to right, #e0f7fa, #b2ebf2, #80deea, #4dd0e1, #26c6da);
+            height: 100vh; /* Make the background cover the full viewport height */
+            display: flex;
+            flex-direction: column; /* Make the body a flex container */
+        }
+
+        header {
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Gradient background for the header */
+            background: linear-gradient(to right, #e0f7fa, #b2ebf2, #80deea, #4dd0e1, #26c6da);
+            color: white;
+        }
+
+        /* Advanced title styles */
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem; /* Large font size */
+            text-transform: uppercase;
+            letter-spacing: 0.1rem; /* Subtle letter spacing */
+            /* Gradient text effect with darker colors */
+            background: linear-gradient(to right, #0d47a1, #1565c0, #1e88e5, #2196f3, #42a5f5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* Pulsing animation */
+            animation: pulse 3s infinite;
+        }
+
+        /* Pulsing animation */
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive adjustment for the title */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Adjust font size for smaller screens */
+            }
+        }
+
+        /* Grid layout for sections */
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        /* Card styles for sections */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Button styles */
+        button {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0d47a1;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(55, 71, 79, 0.7); /* Slightly transparent background */
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Advanced title with diamond emojis -->
+        <h1>💎 💎 Diamond Showcase  💎 💎</h1>
+        <p>  💎 💎 💎 💎 💎 💎 💎 💎 💎 💎💎Experience the brilliance and beauty of diamonds💎💎 💎 💎 💎 💎 💎 💎 💎 💎 💎 💎</p>
+    </header>
+
+    <main>
+        <!-- Section showcasing different diamond cuts -->
+        <section>
+            <div class="card" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Sparkling Diamond Cuts 💎</h2>
+                <img src="diamonds/Types-of-Diamond-Cuts---How-to-Choose-The-Right-Shape.webp" alt="💎 Sparkling Diamond Cuts 💎" width="600">
+                <p style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">The most popular and dazzling diamond cuts!</p>
+                <button style="font-family: 'Comic Sans MS', cursive; color: #0000FF;" onclick="showCutDetails('Round Brilliant Cut')">Discover More</button>
+            </div>
+
+            <div class="card" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Dazzling Diamond Colors 💎</h2>
+                <img src="diamonds/diamond_Color_Chart1_9020e7ec7b.webp" alt="💎 Dazzling Diamond Colors 💎" width="600">
+                <p style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">The most popular and dazzling diamond colors!</p>
+                <button style="font-family: 'Comic Sans MS', cursive; color: #0000FF;" onclick="showCutDetails('Round Brilliant Cut')">Discover More</button>
+            </div>
+
+            <div class="card" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Dazzling Diamond Clarity 💎</h2>
+                <img src="diamonds/Diamond-Clarity-Chart-11.webp" alt="💎 Dazzling Diamond Clarity 💎" width="600">
+                <p style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">The most popular and dazzling diamond clarity!</p>
+                <button style="font-family: 'Comic Sans MS', cursive; color: #0000FF;" onclick="showCutDetails('Round Brilliant Cut')">Discover More</button>
+            </div>
+        </section>
+
+        <!-- Section showcasing videos and multimedia -->
+        <section>
+            <div class="card">
+                <h2>Diamond Mining</h2>
+                <video controls width="300">
+                    <source src="https://www.youtube.com/watch?v=ucaVEIjiZ58" type="video/mp4">
+                    
+                </video>
+                <p>Watch the process of diamond mining.</p>
+            </div>
+
+            <div class="card">
+                <h2>Diamond Cutting</h2>
+                <audio controls>
+                    <source src="https://example.com/cutting.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Listen to the process of diamond cutting.</p>
+            </div>
+
+            <style>
+                .chat-bubble {
+                    background-color: #E0FFFF;
+                    border-radius: 10px;
+                    padding: 10px;
+                    max-width: 300px;
+                    margin: 10px;
+                }
+                
+                .chat-bubble p {
+                    margin: 0;
+                }
+                </style>
+                
+                <div class="chat-bubble">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+                            
+        </section>
+
+        <!-- Section showcasing the history of diamonds -->
+        <section>
+            <div class="card">
+                <h2>History of Diamonds</h2>
+                <p>Explore the fascinating history of diamonds, from ancient times to modern day.</p>
+                <button onclick="showHistory()">Read More</button>
+            </div>
+
+            <div class="card">
+                <h2>Famous Diamonds</h2>
+                <p>Discover some of the world's most famous diamonds and their stories.</p>
+                <button onclick="showFamousDiamonds()">Read More</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diamond Showcase</p>
+    </footer>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        function showCutDetails(cutType) {
+            alert('Showing details for: ' + cutType);
+            // Implement further interactivity here (e.g., show modal with more info)
+        }
+
+        function showHistory() {
+            alert('Showing the history of diamonds.');
+            // Implement further interactivity here (e.g., navigate to history section)
+        }
+
+        function showFamousDiamonds() {
+            alert('Showing famous diamonds.');
+            // Implement further interactivity here (e.g., navigate to famous diamonds section)
+        }
+    </script>
+</body>
+
+</html>
