@@ -1,6 +1,15 @@
-# Functions File
+# Ignore warnings
+import warnings
+warnings.filterwarnings('ignore')
+
+# Load environment variables
+from dotenv import load_dotenv
+import os, PyPDF2, re
+from typing import List
+
+# Data handling
 import pandas as pd
-import PyPDF2, os, re
+
 ## Regression
 from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, AdaBoostRegressor 
@@ -14,6 +23,27 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # Evaluation metrics
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
+
+# Pinecone
+from pinecone import Pinecone, ServerlessSpec
+
+# OpenAI
+from openai import OpenAI
+
+# Tokenization
+import nltk
+import tiktoken
+
+# Langchain
+from langchain_openai import ChatOpenAI
+from langchain.docstore.document import Document
+from langchain.chains.question_answering import load_qa_chain
+
+# Transformers
+from transformers import pipeline
+
+# Matplotlib
+import matplotlib.pyplot as plt
 
 def return_r2(y_test, y_pred):
     mse = mean_squared_error(y_test, y_pred)
@@ -173,7 +203,8 @@ def get_diamond_info():
     resources/pdfs folder
     """
     pdf_list = os.listdir('resources/pdfs')
-    text = ''
+    # A large block of text to vectorize as embeddings
+    text = ""
 
     for pdf in pdf_list:
     # Open the PDF file in binary mode
@@ -191,6 +222,36 @@ def get_diamond_info():
 
         text += "\n"
 
-    cleaned_text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
-
+        text += """The most famous type of diamond cut is the round brilliant cut.
+            It is known for its ability to maximize a diamond's sparkle and brilliance due to its precise faceting. 
+            Diamond certification is a process in which a diamond is evaluated and graded based on its characteristics such as carat weight, cut, color, and clarity (known as the 4Cs). 
+            This evaluation is conducted by a reputable gemological laboratory, such as the Gemological Institute of America (GIA) or the International Gemological Institute (IGI).
+            A certificate detailing these characteristics is provided to verify the diamond's quality and authenticity. The diamond industry is vast, and there isn't one definitive "top diamond dealer" globally. 
+            However, some of the largest and most well-known diamond companies include De Beers, Alrosa, and Rio Tinto. These companies are known for their extensive involvement in diamond mining and trade.
+            Diamond impurities or inclusions are natural features within a diamond that can affect its clarity. Signs of diamond impurities include internal flaws such as feathers, crystals, or needles.
+            Surface blemishes may include pits or scratches. These imperfections are often evaluated and rated on a clarity scale, ranging from "Flawless" to "Included."
+            Blood diamonds, also known as conflict diamonds, are diamonds mined in war zones and sold to finance armed conflict against governments. 
+            The term gained widespread awareness due to humanitarian concerns related to unethical mining practices and exploitation.
+            Efforts such as the Kimberley Process have been established to prevent the trade of conflict diamonds.
+            The diamond industry has a long and storied history. Diamonds were first discovered and mined in India around the 4th century BCE. 
+            The industry expanded with the discovery of diamond deposits in South Africa in the late 1800s, which led to the establishment of large diamond mining companies like De Beers. 
+            Today, diamonds are sourced from various regions worldwide, including Russia, Australia, and Canada.
+            Major players in the diamond market include companies involved in diamond mining, trading, and retailing. De Beers, Alrosa, and Rio Tinto are some of the leading diamond mining companies. 
+            In terms of retail, companies like Tiffany & Co., Cartier, and Graff Diamonds are well-known luxury brands in the diamond jewelry market.
+            The number of diamonds used in high-end jewelry can vary depending on the design and size of the piece. 
+            For example, a solitaire engagement ring may feature a single prominent diamond, while a necklace or bracelet might include multiple smaller diamonds set in intricate patterns. 
+            High-end jewelry pieces often focus on quality and artistry, with diamonds chosen for their exceptional cut, clarity, color, and carat weight.
+            Langsmith is likely a reference to an expert or resource specializing in diamond appraisals. 
+            An expert like Langsmith can teach us how to evaluate diamonds based on the 4Cs (carat, cut, color, and clarity), how to identify diamond treatments or enhancements, and how to properly assess the value of a diamond. 
+            They may also provide guidance on recognizing reputable grading certificates and authenticating diamonds.
+            """
+    # cleaned_text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
+    cleaned_text = re.sub(r'[^a-zA-Z0-9\s.]|(\s+)', lambda x: ' ' if x.group(1) else '', text)
+    cleaned_text = cleaned_text.replace("\r","")
+    cleaned_text = cleaned_text.replace("\n","")
+    cleaned_text = cleaned_text.replace("\t","")
+    cleaned_text = cleaned_text.strip()
+    with open('resources/diamond_information.txt', 'w') as file:
+        file.write(cleaned_text)
+        file.close()
     return cleaned_text
