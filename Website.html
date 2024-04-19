@@ -18,7 +18,7 @@
             margin: 0;
             padding: 0;
             /* Gradient background with light blue face colors */
-            background: linear-gradient(to right, #e0f7fa, #b2ebf2, #80deea, #4dd0e1, #26c6da);
+            background: linear-gradient(to right, #fda9f5, #b2ebf2, #f6b0f8, #4dd0e1, #de7df1);
             height: 100vh; /* Make the background cover the full viewport height */
             display: flex;
             flex-direction: column; /* Make the body a flex container */
@@ -29,7 +29,7 @@
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             /* Gradient background for the header */
-            background: linear-gradient(to right, #e0f7fa, #b2ebf2, #80deea, #4dd0e1, #26c6da);
+            background: linear-gradient(to right, #f1b1e9, #f071f0, #80deea, #db5cd5, #ee64cb);
             color: white;
         }
 
@@ -40,7 +40,7 @@
             text-transform: uppercase;
             letter-spacing: 0.1rem; /* Subtle letter spacing */
             /* Gradient text effect with darker colors */
-            background: linear-gradient(to right, #0d47a1, #1565c0, #1e88e5, #2196f3, #42a5f5);
+            background: linear-gradient(to right, #8b128f, #fc3f8e, #f047f0, #c91182, #d4125d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             /* Pulsing animation */
@@ -78,13 +78,15 @@
 
         /* Card styles for sections */
         .card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    background: linear-gradient(to bottom, #87CEFA, #8abfeb, #d488e4); /* Adjust the colors and direction as desired */
         }
+
 
         .card:hover {
             transform: scale(1.05);
@@ -139,7 +141,7 @@
             <div class="card" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
                 <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Sparkling Diamond Cuts 💎</h2>
                 <img src="diamonds/Types-of-Diamond-Cuts---How-to-Choose-The-Right-Shape.webp" alt="💎 Sparkling Diamond Cuts 💎" width="600">
-                <p style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">The most popular and dazzling diamond cuts!</p>
+                <p style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">The most popular and sparkling diamond cuts!</p>
                 <button style="font-family: 'Comic Sans MS', cursive; color: #0000FF;" onclick="showCutDetails('Round Brilliant Cut')">Discover More</button>
             </div>
 
@@ -151,57 +153,106 @@
             </div>
 
             <div class="card" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Dazzling Diamond Clarity 💎</h2>
+                <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Gorgeous Diamond Clarity 💎</h2>
                 <img src="diamonds/Diamond-Clarity-Chart-11.webp" alt="💎 Dazzling Diamond Clarity 💎" width="600">
-                <p style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">The most popular and dazzling diamond clarity!</p>
+                <p style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">The most popular and gorgeous diamond clarity!</p>
                 <button style="font-family: 'Comic Sans MS', cursive; color: #0000FF;" onclick="showCutDetails('Round Brilliant Cut')">Discover More</button>
             </div>
         </section>
 
-        <!-- Section showcasing videos and multimedia
+        <!-- Section showcasing pricing tools and image generators and NLP -->
         <section>
-            <div class="card">
-                <h2>Diamond Mining</h2>
-                <video controls width="300">
-                    <source src="https://www.youtube.com/watch?v=ucaVEIjiZ58" type="video/mp4">
-                    
-                </video>
-                <p>Watch the process of diamond mining.</p>
+            <div class="card" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Diamond Image Generator 💎</h2>
+                <img src="diamonds/image4.png" alt="Diamond image Tool" width="600">
+                <p style="font-family: 'Comic Sans MS', cursive; color: #2f0fe4;">Interact with our diamond image generator to see what your desired 💎 diamond 💎 looks like!</p>
+                <button style="font-family: 'Comic Sans MS', cursive; color: #3d0af5;" id="gradioBtn" onclick="launchDiamondPricingTool()">Launch Diamond Image Generator</button>
             </div>
-
-            <div class="card">
-                <h2>Diamond Cutting</h2>
-                <audio controls>
-                    <source src="https://example.com/cutting.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-                <p>Listen to the process of diamond cutting.</p>
-            </div>
-
-            <style>
-                .chat-bubble {
-                    background-color: #E0FFFF;
-                    border-radius: 10px;
-                    padding: 10px;
-                    max-width: 300px;
-                    margin: 10px;
-                }
-                
-                .chat-bubble p {
-                    margin: 0;
-                }
-                </style>
-                
-                <div class="chat-bubble">
-                    <p>Hello! How can I help you today?</p>
+            
+        
+            <!-- Gradio Interface Modal -->
+            <div id="gradioModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe src="" style="width: 100%; height: 500px;" frameborder="0"></iframe>
                 </div>
-            -->
+            </div>
         </section>
-        <div class="card">
-            <h2>Diamond Pricing Tool</h2>
-            <button id="gradioBtn">Launch Diamond Pricing Tool</button>
-            <p>Interact with our diamond pricing tool to learn what your desired diamond costs.</p>
+        
+        <style>
+            /* Add to your existing styles */
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+            }
+        
+            .modal-content {
+                background-color: #f354be;
+                margin: 10% auto;
+                padding: 20px;
+                border: 1px solid #ec59b4;
+                width: 80%;
+            }
+        
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+        
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+        
+        <script>
+            // Get the modal
+            var gradioModal = document.getElementById("gradioModal");
+        
+            // Get the button that opens the modal
+            var gradioBtn = document.getElementById("gradioBtn");
+        
+            // Get the <span> element that closes the modal
+            var closeBtn = document.getElementsByClassName("close")[0];
+        
+            // When the user clicks the button, open the modal
+            gradioBtn.onclick = function() {
+                gradioModal.style.display = "block";
+            }
+        
+            // When the user clicks on <span> (x), close the modal
+            closeBtn.onclick = function() {
+                gradioModal.style.display = "none";
+            }
+        
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == gradioModal) {
+                    gradioModal.style.display = "none";
+                }
+            }
+        </script>
+
+        </section>
+        <div class="card" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Diamond Pricing Tool 💎</h2>
+            <img src="diamonds/image3.png" alt="Diamond Pricing Tool" width="600">
+            <p style="font-family: 'Comic Sans MS', cursive; color: #2f0fe4;">Interact with our diamond pricing tool to learn what your desired diamond costs!</p>
+            <button style="font-family: 'Comic Sans MS', cursive; color: #3d0af5;" id="gradioBtn" onclick="launchDiamondPricingTool()">Launch Diamond Pricing Tool</button>
         </div>
+        
     
         <!-- Gradio Interface Modal -->
         <div id="gradioModal" class="modal">
@@ -228,10 +279,10 @@
         }
     
         .modal-content {
-            background-color: #fefefe;
+            background-color: #f354be;
             margin: 10% auto;
             padding: 20px;
-            border: 1px solid #888;
+            border: 1px solid #ec59b4;
             width: 80%;
         }
     
@@ -278,18 +329,88 @@
         }
     </script>
 
+            <div class="card">
+                <h1>DALL·E Image Generation</h1>
+                <form action="/generate_image" method="post">
+                    <label for="prompt">Prompt:</label>
+                    <input type="text" id="prompt" name="prompt">
+                    <button type="submit">Generate Image</button>
+                </form>
+                <div id="image-container">
+                    <!-- Image will be displayed here -->
+                </div>
+
+            <style>
+                .chat-bubble {
+                    background-color: #E0FFFF;
+                    border-radius: 10px;
+                    padding: 10px;
+                    max-width: 300px;
+                    margin: 10px;
+                }
+                
+                .chat-bubble p {
+                    margin: 0;
+                }
+                </style>
+                
+                <div class="chat-bubble">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+                            
+        </section>
+
         <!-- Section showcasing the history of diamonds -->
         <section>
-            <div class="card">
-                <h2>History of Diamonds</h2>
-                <p>Explore the fascinating history of diamonds, from ancient times to modern day.</p>
-                <button onclick="showHistory()">Read More</button>
+            <div class="card" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Diamond History 💎</h2>
+                <img src="diamonds/image1.png" alt="💎 Dazzling Diamond Clarity 💎" width="600">
+                <p style="font-family: 'Comic Sans MS', cursive; color: #0000FF;">Thrilling tails about beautiful diamonds & their history!</p>
+                <button style="font-family: 'Comic Sans MS', cursive; color: #0000FF;" onclick="showCutDetails('Round Brilliant Cut')">Discover More</button>
             </div>
 
-            <div class="card">
-                <h2>Famous Diamonds</h2>
-                <p>Discover some of the world's most famous diamonds and their stories.</p>
-                <button onclick="showFamousDiamonds()">Read More</button>
+            <div class="card" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <h2 style="font-family: 'French Script MT', cursive; color: #0000FF; font-size: 48px;">💎 Famous Diamonds 💎</h2>
+                <img src="diamonds/image2.png" alt="💎 Dazzling Diamond Clarity 💎" width="600">
+                <p style="font-family: 'Comic Sans MS', cursive; color: #0000FF; background-color: #fcaef5; border: 2px solid #1e90ff; border-radius: 10px; padding: 10px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); line-height: 1.5;">
+                    <strong>The most famous diamonds to exist!</strong> Diamonds have long been revered for their beauty and rarity. Throughout history, several diamonds have gained fame for their size, color, or storied histories. Here are some of the most famous diamonds in the world:
+                
+                    <strong>Cullinan Diamond</strong> 
+                        - The largest rough diamond ever found, discovered in South Africa in 1905.
+                        - It was cut into several large stones, including the Great Star of Africa (Cullinan I), which is set in the British Crown Jewels.
+                    
+                    <strong>Hope Diamond</strong> 
+                        - A deep blue diamond weighing around 45.52 carats.
+                        - Known for its alleged curse, the diamond has been owned by various notable figures and is currently housed at the Smithsonian Institution in Washington, D.C.
+                    
+                    <strong>The Koh-i-Noor</strong>
+                        - A large, colorless diamond with a weight of around 105.6 carats.
+                        - It is part of the British Crown Jewels and has a long and complex history involving various royal dynasties in India and beyond.
+                    
+                    <strong>The Regent Diamond</strong>
+                        - A cushion-cut diamond weighing approximately 140.64 carats.
+                        - Once owned by Louis XV of France, it is now on display at the Louvre Museum in Paris.
+                    
+                    <strong>The Orlov Diamond</strong>
+                        - A large rose-cut diamond weighing approximately 189.62 carats.
+                        - Named after Count Orlov, who is said to have purchased the diamond and gifted it to Empress Catherine the Great of Russia. It is now part of the Kremlin Diamond Fund.
+                    
+                    <strong>The Sancy Diamond</strong>
+                        - A pale yellow diamond weighing around 55.23 carats.
+                        - Known for its shield shape, the diamond has a storied history involving various European royal families.
+                    
+                    <strong>The Wittelsbach-Graff Diamond</strong>
+                        - A deep blue diamond weighing around 31.06 carats.
+                        - Originally part of the Bavarian Crown Jewels, the diamond was recut by Laurence Graff in 2008.
+                    
+                    <strong>The Darya-i-Noor</strong>
+                        - A pale pink diamond weighing around 182 carats.
+                        - It is one of the largest diamonds in the world and is part of the Iranian Crown Jewels.
+                    
+                    These diamonds are renowned not only for their size and beauty but also for their historical significance and associations with royalty and nobility. Many of them are displayed in museums and form part of the world's most valuable collections of gemstones.
+                </p>
+                
+                <button style="font-family: 'Comic Sans MS', cursive; color: #0000FF;" onclick="showCutDetails('Round Brilliant Cut')">Discover More</button>
             </div>
         </section>
     </main>
