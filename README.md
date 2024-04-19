@@ -1,9 +1,9 @@
 # Project-3
-# Project-3: Diamonds Chatbot 🤖💎
+# Project-3: 💎Diamonds Showcase💎
 
 ## Overview 🌟
 
-Welcome to the Diamonds Chatbot project! This project is part of the AI Bootcamp at OSU, where we delve into creating an interactive chatbot using cutting-edge technologies. In this project, we're leveraging Gradio for the user interface, integrating it with OpenAI for natural language processing, and DALL-E for image generation. Our goal is to build a conversational AI system that can provide information and generate images related to diamonds. 💬Did your boo thang get you a diamond that you want to learn more about? Come check out our chatbot!!!!!🔍🖼️
+Welcome to the Diamonds Showcase! This project is part of the AI Bootcamp at OSU, where we delve into creating an interactive chatbot using cutting-edge technologies. In this project, we're leveraging Gradio for the user interface, integrating it with OpenAI for natural language processing, and DALL-E for image generation. Our goal is to build a conversational AI system that can provide information and generate images related to diamonds. 💬Did your boo thang get you a diamond that you want to learn more about? Come check out our chatbot!!!!!🔍🖼️
 
 ## Features 🚀
 
