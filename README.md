@@ -49,6 +49,8 @@ Welcome to the Diamonds Showcase! This project is part of the AI Bootcamp at OSU
 
 ## Pinecone 
 Utilizing Pinecone and vectorizing text into chunks are crucial steps in improving the performance and efficiency of NLP text summarizers. Pinecone is a vector database service designed for handling high-dimensional vector data at scale, offering efficient storage and retrieval of vectorized data. Vectorizing text into chunks reduces dimensionality and preserves semantic information, allowing Pinecone to efficiently search for and retrieve the most relevant information. These techniques combined contribute to building a fast, efficient, and accurate NLP text summarization system.
+## Text to Image Generator 
+Integrating a text-to-image generator with Gradio and DALL-E in Python is crucial for creating a powerful and interactive AI system. By combining these technologies, we can generate images directly from textual input, significantly enhancing user experience and versatility. Gradio provides an intuitive user interface, allowing users to input text and receive generated images seamlessly. DALL-E, on the other hand, is a state-of-the-art model capable of creating high-quality images from textual descriptions. This integration not only provides a visually enriched experience but also allows for a more comprehensive interaction, making it an indispensable tool for various applications, from creative design to content generation, and more.
 
 ## Contributing 🤝
 
