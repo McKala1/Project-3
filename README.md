@@ -58,6 +58,7 @@ Utilizing Pinecone and vectorizing text into chunks are crucial steps in improvi
 
 ## Text to Image Generator 
 Integrating a text-to-image generator with Gradio and DALL-E in Python is crucial for creating a powerful and interactive AI system. By combining these technologies, we can generate images directly from textual input, significantly enhancing user experience and versatility. Gradio provides an intuitive user interface, allowing users to input text and receive generated images seamlessly. DALL-E, on the other hand, is a state-of-the-art model capable of creating high-quality images from textual descriptions. This integration not only provides a visually enriched experience but also allows for a more comprehensive interaction, making it an indispensable tool for various applications, from creative design to content generation, and more.
+[View image](/diamonds/image1.png)
 
 ## Training Data and Model
 - For price prediction, an initial pipeline created for models’ Linear Regression, KNeighbors, RandomForest, ExtraTrees regressor and ADAboost, where ExtraTrees performed the best with R2 train/test scores of  0.9818/0.9999 and MAE train/test 0.4004/263.3307. Next, explored neural network performance by optimizing hyperparameters using Regression Hyper Model and Keras Tuner, to see if corrections can be made to the performance that is showing overfitting. 
@@ -86,8 +87,13 @@ Describe how the chatbot is deployed and integrated into the target environment 
 
 ## Conclusion
 
-Summarize the key findings and conclusions of the chatbot project, highlighting its significance, impact, and value proposition. Emphasize any achievements, successes, or lessons learned during the development process.
+In conclusion, 
 
+Why its important to vectorize your text
+Vectorizing text with Pinecone is crucial because it enables fast and efficient vector searches. By vectorizing text with Pinecone, I can perform quick and accurate searches. In the context of the diamond industry, vectorizing PDFs and text with Pinecone allows for the efficient analysis of various aspects of diamonds. By combining Pinecone's vector search capabilities with the data extracted from PDFs and text files, I can prompt the system with a question and receive an NLP-generated summary, gaining valuable insights into diamonds and enhancing my knowledge and understanding of them. This process is particularly important in the diamond industry, as it allows for rapid and precise analysis, improving decision-making processes and facilitating better communication and visualization of data. Pinecone opens up new avenues for efficient data processing, enhancing the overall productivity and effectiveness of diamond-related tasks.
+
+Why its important to use Dalle 
+DALL-E is crucial in the diamond industry as it provides a groundbreaking method for text-to-image generation. By utilizing DALL-E, I can generate images from textual descriptions, which is particularly valuable in the diamond industry. DALL-E enables me to explore and comprehend various aspects of diamonds through image representation. With DALL-E, I can prompt the system with a question, receive an NLP-generated summary, and gain valuable insights into diamonds, thereby enhancing my knowledge and understanding of them. This capability is particularly useful in the diamond industry where visual representation from text data is essential, allowing for better communication, visualization, and analysis. DALL-E opens up new opportunities for creative AI applications, offering a deeper and more comprehensive understanding of diamonds through visual representations.
 
 
 ## Contributing 🤝
