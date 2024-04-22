@@ -29,7 +29,8 @@ Welcome to the Diamonds Showcase! This project is part of the AI Bootcamp at OSU
 7. Enjoy 💬🎉
 
 ## Pinecone 🌲
-<img src="/images/pinecone_code.png" alt="pinecone_code" style="width: 400px; float: left; margin-right: 10px;"/> Utilizing Pinecone and vectorizing text into chunks are crucial steps in improving the performance and efficiency of NLP text summarizers. Pinecone is a vector database service designed for handling high-dimensional vector data at scale, offering efficient storage and retrieval of vectorized data. Vectorizing text into chunks reduces dimensionality and preserves semantic information, allowing Pinecone to efficiently search for and retrieve the most relevant information. These techniques combined contribute to building a fast, efficient, and accurate NLP text summarization system.
+Utilizing Pinecone and vectorizing text into chunks are crucial steps in improving the performance and efficiency of NLP text summarizers. Pinecone is a vector database service designed for handling high-dimensional vector data at scale, offering efficient storage and retrieval of vectorized data. Vectorizing text into chunks reduces dimensionality and preserves semantic information, allowing Pinecone to efficiently search for and retrieve the most relevant information. These techniques combined contribute to building a fast, efficient, and accurate NLP text summarization system.<br/>
+<img src="/images/pinecone_code.png" alt="pinecone_code" style="width: 400px;"/> 
 
 
 ## Text to Image Generator 🤖
