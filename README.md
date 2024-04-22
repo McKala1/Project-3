@@ -38,8 +38,8 @@ Integrating a text-to-image generator with Gradio and DALL-E in Python is crucia
 ## Predictive Modeling of Diamond Price 💵
 - Predictive models were created using a diamonds dataset from kaggle [View dataset](/diamonds.csv)
 - Standard preprocessing (data cleaning, encoding, scaling) and data exploration were performed [View notebook](/Diamond_Price_Prediction_Model_Dev.ipynb)
-- Numerous classical machine learning architectures were explored, two were optimized. Performance was high but overfitting was rampant.
-- TensorFlow and kerastuner were used to optimize a deep neural network, which demonstrated the best overall performance with no overfitting.
+- Numerous classical machine learning architectures were explored, two were optimized. Performance was high but overfitting was rampant
+- TensorFlow and kerastuner were used to optimize a deep neural network, which demonstrated the best overall performance with no overfitting
 ![Model Performance](/images/model_performance.png)
 - PyTorch framework was also used to predict price which included tensor creation, model definition, dataset creation, dataloading and model training. The first epoch indicates that the model's prediction is off by 24.36 from the actual target variable. Subsequesnt epochs show flucuations in the loss value which can indicate performance temporarialy deterioating. However, the loss gradually decreases, indicating improvement in the models's performance, ending with the last epoch at 0.00839. 
 
