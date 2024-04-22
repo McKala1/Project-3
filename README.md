@@ -109,6 +109,8 @@ Contributions are welcome! Feel free to submit issues or pull requests if you ha
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Citations
+
 ## Acknowledgements 🙏
 
 We would like to thank the developers of Gradio, OpenAI, and DALL-E for providing the tools and APIs that make this project possible. 👏🌟
