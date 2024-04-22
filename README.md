@@ -1,7 +1,7 @@
 # Project-3
 
 Google Slides: 
-https://docs.google.com/presentation/d/180iazh-0e2mQfu0h9xBafVOfzKl_t-bgL2INx06a48A/edit#slide=id.g26f1b39ef97_1_176
+[https://docs.google.com/presentation/d/180iazh-0e2mQfu0h9xBafVOfzKl_t-bgL2INx06a48A/edit#slide=id.g26f1b39ef97_1_176](https://docs.google.com/presentation/d/180iazh-0e2mQfu0h9xBafVOfzKl_t-bgL2INx06a48A/edit?invite=CN-qip4O#slide=id.g26f1b39ef97_1_23)
 
 
 # Project-3: 💎Diamonds Showcase💎
