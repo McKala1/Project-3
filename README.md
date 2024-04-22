@@ -1,26 +1,24 @@
 # Project-3
+💎**Diamonds Showcase README**💎
 
-Google Slides: 
-[https://docs.google.com/presentation/d/180iazh-0e2mQfu0h9xBafVOfzKl_t-bgL2INx06a48A/edit#slide=id.g26f1b39ef97_1_176](https://docs.google.com/presentation/d/180iazh-0e2mQfu0h9xBafVOfzKl_t-bgL2INx06a48A/edit?invite=CN-qip4O#slide=id.g26f1b39ef97_1_23)
-
-
-# Project-3: 💎Diamonds Showcase💎
+[**Presentation**](https://docs.google.com/presentation/d/180iazh-0e2mQfu0h9xBafVOfzKl_t-bgL2INx06a48A/edit#slide=id.g26f1b39ef97_1_23)
 
 ## Overview 🌟
 
-Welcome to the Diamonds Showcase! This project is part of the AI Bootcamp at OSU, where we delve into creating an interactive chatbot using cutting-edge technologies. In this project, we're leveraging Gradio for the user interface, integrating it with OpenAI for natural language processing, and DALL-E for image generation. Our goal is to build a conversational AI system that can provide information and generate images related to diamonds. 💬Did your boo thang get you a diamond that you want to learn more about? Come check out our chatbot!!!!!🔍🖼️
+Welcome to the Diamonds Showcase! This project is part of the AI Bootcamp at OSU, where we delve into creating an interactive diamond-centric experience using cutting-edge technologies. In this project, we're leveraging Gradio for the user interfaces, integrating CHATGPT for natural language processing, and DALL-E for image generation. Our goal is to build an interactive, comprehensive AI-based experience for those interested in diamonds. 💬Did your boo thang get you a diamond that you want to learn more about? Come check out our project!!!!!🔍🖼️
 
 ## Methodology
 
 - Programming language: Python with source code editor, Visual Studio Code
-- Data Sceince and Machine Learning: NumPy, Pandas, scikit-learn, PyTorch, TensorFlow, KerasTuner
+- Data Science and Machine Learning: NumPy, Pandas, scikit-learn, PyTorch, TensorFlow, KerasTuner
 - Additional libraries: seaborn, statsmodels, matplotlib.pyplot, plotly.express, and torch
 
 ## Features 🚀
 
-- **Chat Interface**: Utilize Gradio to create an intuitive chat interface for users to interact with the chatbot.
-- **Natural Language Understanding**: Integrate OpenAI's language model to understand and respond to user queries naturally.
-- **Image Generation**: Leverage DALL-E's capabilities to generate images based on user requests related to diamonds.
+- **Gradio Interfaces**: Utilize Gradio to create an intuitive interface for users to interact with AI-based tools
+- **Natural Language Understanding**: Integrate OpenAI's language model to understand and respond to user queries naturally
+- **Deep Neural Network Based Price Prediction**: Utilize both TensorFlow and PyTorch to create highly accurate 
+- **Image Generation**: Leveraged DALL-E's capabilities to generate images based on user requests related to diamonds.
 - **Information Retrieval**: Provide users with information about diamonds, including pricing, characteristics, and more. 📊💡
 
 ## Dependencies 📦
@@ -30,33 +28,15 @@ Welcome to the Diamonds Showcase! This project is part of the AI Bootcamp at OSU
 - DALL-E API
 - Python 3.x
 
-## Installation 💻
+## Usage 💻🎮
 
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/yourusername/project-3-diamonds-chatbot.git
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   pip install gradio openai dalle-py
-   ```
-
-3. Run the application:
-
-   ```bash
-   python app.py
-   ```
-
-4. Access the chatbot interface through your web browser at `http://localhost:7860`.
-
-## Usage 🎮
-
-1. Enter your query or request in the chat window.
-2. The chatbot will process your input, provide relevant information, and generate images as needed.
-3. Enjoy conversing with the Diamonds Chatbot! 💬🎉
+1. Clone this repository
+2. Install dependencies
+3. Run all .ipynb notebooks
+4. Update local gradio URLs in website.html file
+5. Run website
+6. Enter your query or request in desired interface
+7. Enjoy 💬🎉
 
 ## Pinecone 
 Utilizing Pinecone and vectorizing text into chunks are crucial steps in improving the performance and efficiency of NLP text summarizers. Pinecone is a vector database service designed for handling high-dimensional vector data at scale, offering efficient storage and retrieval of vectorized data. Vectorizing text into chunks reduces dimensionality and preserves semantic information, allowing Pinecone to efficiently search for and retrieve the most relevant information. These techniques combined contribute to building a fast, efficient, and accurate NLP text summarization system.
@@ -84,24 +64,12 @@ Describe how the chatbot is deployed and integrated into the target environment 
 
 
 # Future Work and Recommendations
-- The regression models need additional testing with adjustments to hyperparameters since it still shows overfitting despite optimizations 
+- Host webpage on internet
+- Expand text data available to chatbot
+- Assess the highly performing deep neural network created with TensorFlow on outside data
 - With PyTorch, more research on how to enhance the model, such as adjusting the model architecture by adding more layers, incresing the number of neurons or different activation functions. Implement and experiment with different regularization techniques to prevent overfitting and improve generalization performance. This could include dropout regularization, L2 regularization (weight decay), or early stopping.
 
-
-
-
-## Conclusion
-
-In conclusion, 
-
-Why its important to vectorize your text
-Vectorizing text with Pinecone is crucial because it enables fast and efficient vector searches. By vectorizing text with Pinecone, I can perform quick and accurate searches. In the context of the diamond industry, vectorizing PDFs and text with Pinecone allows for the efficient analysis of various aspects of diamonds. By combining Pinecone's vector search capabilities with the data extracted from PDFs and text files, I can prompt the system with a question and receive an NLP-generated summary, gaining valuable insights into diamonds and enhancing my knowledge and understanding of them. This process is particularly important in the diamond industry, as it allows for rapid and precise analysis, improving decision-making processes and facilitating better communication and visualization of data. Pinecone opens up new avenues for efficient data processing, enhancing the overall productivity and effectiveness of diamond-related tasks.
-
-Why its important to use Dalle 
-DALL-E is crucial in the diamond industry as it provides a groundbreaking method for text-to-image generation. By utilizing DALL-E, I can generate images from textual descriptions, which is particularly valuable in the diamond industry. DALL-E enables me to explore and comprehend various aspects of diamonds through image representation. With DALL-E, I can prompt the system with a question, receive an NLP-generated summary, and gain valuable insights into diamonds, thereby enhancing my knowledge and understanding of them. This capability is particularly useful in the diamond industry where visual representation from text data is essential, allowing for better communication, visualization, and analysis. DALL-E opens up new opportunities for creative AI applications, offering a deeper and more comprehensive understanding of diamonds through visual representations.
-
-
-## Contributing 🤝
+## Contributions 🤝
 
 Contributions are welcome! Feel free to submit issues or pull requests if you have any ideas for improvements or encounter any bugs.
 
@@ -109,8 +77,12 @@ Contributions are welcome! Feel free to submit issues or pull requests if you ha
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Citations
-
-## Acknowledgements 🙏
+## Acknowledgements and Citations 🙏
+Diamond Analysis: Diamonds In-Depth Analysis (kaggle.com)
+Ogden, J. (2018). Diamonds : An Early History of the King of Gems. Yale University Press. https://doi.org/10.12987/9780300235517
+Aharonovich, I., Greentree, A. D., & Prawer, S. (2011). Diamond photonics. Nature Photonics, 5(7), 397–405. https://doi.org/10.1038/nphoton.2011.54
+Types of Diamond Cuts - How to Choose The Right Shape – Padis Jewelry (padisgems.com)
+Diamond Color Scale Chart | 4C's Education (rarecarat.com)
+Diamond Color and Clarity – Andrea Bonelli
 
 We would like to thank the developers of Gradio, OpenAI, and DALL-E for providing the tools and APIs that make this project possible. 👏🌟
