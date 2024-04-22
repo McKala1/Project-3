@@ -58,6 +58,7 @@ Utilizing Pinecone and vectorizing text into chunks are crucial steps in improvi
 
 ## Text to Image Generator 
 Integrating a text-to-image generator with Gradio and DALL-E in Python is crucial for creating a powerful and interactive AI system. By combining these technologies, we can generate images directly from textual input, significantly enhancing user experience and versatility. Gradio provides an intuitive user interface, allowing users to input text and receive generated images seamlessly. DALL-E, on the other hand, is a state-of-the-art model capable of creating high-quality images from textual descriptions. This integration not only provides a visually enriched experience but also allows for a more comprehensive interaction, making it an indispensable tool for various applications, from creative design to content generation, and more.
+[View image](/diamonds/image1.png)
 
 ## Training Data and Model
 - For price prediction, an initial pipeline created for models’ Linear Regression, KNeighbors, RandomForest, ExtraTrees regressor and ADAboost, where ExtraTrees performed the best with R2 train/test scores of  0.9818/0.9999 and MAE train/test 0.4004/263.3307. Next, explored neural network performance by optimizing hyperparameters using Regression Hyper Model and Keras Tuner, to see if corrections can be made to the performance that is showing overfitting. 
