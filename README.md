@@ -10,8 +10,8 @@ Welcome to the Diamonds Showcase! This project is part of the AI Bootcamp at OSU
 - **Gradio Interfaces**: Utilize Gradio to create an intuitive interface for users to interact with AI-based tools
 - **Natural Language Understanding**: Integrate OpenAI's language model to understand and respond to user queries naturally
 - **Deep Neural Network Based Price Prediction**: Utilize both TensorFlow and PyTorch to create highly accurate 
-- **Image Generation**: Leveraged DALL-E's capabilities to generate images based on user requests related to diamonds.
-- **Information Retrieval**: Provide users with information about diamonds, including pricing, characteristics, and more. 📊💡
+- **Image Generation**: Leveraged DALL-E's capabilities to generate images based on user requests related to diamonds
+- **Information Retrieval**: Provide users with information about diamonds, including pricing, characteristics, and more 📊💡
 
 ## Dependencies 📦
 - Python with source code editor, Visual Studio Code
