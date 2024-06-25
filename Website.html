@@ -87,16 +87,20 @@
 	.card:hover {
             transform: scale(1.05);
        }*/
-	.card {
-		background-color: rgb(202, 13, 189);
-		border-radius: 10px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		padding: 20px;
-		text-align: center;
-		transition: transform 0.3s;
-	}
+	   .card {
+            background: linear-gradient(45deg, #FFDEE9, #FFC0CB, #FF69B4, #FF1493, #DB7093);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px var(--shadow-color);
+            padding: 25px 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: var(--text-color);
+            max-width: 320px;
+            margin: 20px;
+    }
 
-	.card:hover {
+
+        .card:hover {
 		transform: scale(1.05);
 	}
 	
