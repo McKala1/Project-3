@@ -17,7 +17,7 @@ Welcome to the Diamonds Showcase! This project is part of the AI Bootcamp at OSU
 - Python with source code editor, Visual Studio Code
 - NumPy, Pandas, scikit-learn, PyTorch, TensorFlow, KerasTuner
 - seaborn, statsmodels, matplotlib.pyplot, plotly.express, and torch
-- Gradio, OpenAI API, DALL-E API
+- Gradio, OpenAI API, DALL-E API, Pinecone
 
 ## Usage 💻🎮
 1. Clone this repository
